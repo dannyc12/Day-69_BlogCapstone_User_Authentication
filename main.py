@@ -16,8 +16,9 @@ import os
 # start dotenv package
 load_dotenv()
 
+SECRET_KEY = os.urandom(10)
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+app.config['SECRET_KEY'] = SECRET_KEY
 ckeditor = CKEditor(app)
 Bootstrap(app)
 
