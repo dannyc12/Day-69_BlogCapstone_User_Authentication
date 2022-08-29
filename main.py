@@ -12,6 +12,8 @@ from functools import wraps
 import flask_gravatar
 from dotenv import load_dotenv
 import os
+
+# start dotenv package
 load_dotenv()
 
 app = Flask(__name__)
@@ -71,7 +73,7 @@ class Comment(db.Model):
 
 
 # only need to run below code once
-db.create_all()
+#db.create_all()
 
 # initialize login_manager
 login_manager = LoginManager()
