@@ -71,7 +71,7 @@ class Comment(db.Model):
 
 
 # only need to run below code once
-#db.create_all()
+db.create_all()
 
 # initialize login_manager
 login_manager = LoginManager()
